@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  rest:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.rest
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+
+  #calculator:
+  #  build:
+  #    context: .
+  #    dockerfile: docker/Dockerfile.calculator
+  #  ports:
+  #    - "8081:8081"
+  #  networks:
+  #    - app-network
+
+networks:
+  app-network:
+    driver: bridge
