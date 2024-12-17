@@ -35,3 +35,14 @@ mvn test
 ### Documentation with Swagger
 
 http://localhost:8080/swagger-ui/index.html
+
+# Branches
+
+## Main
+
+Code running correctly without Kafka Communication and request identifiers.
+It has documentation with Swagger, unit tests with JUnit and Mocks, logging with SLF4J.
+
+## T-Kafka
+
+Code not running has expected but trying to implement Kafka Communication between modules.
