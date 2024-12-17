@@ -13,7 +13,7 @@ class CalculatorServiceImplTest {
 
     @Test
     void add_ShouldReturnSumOfTwoNumbers() {
-        BigDecimal result = calculatorService.add(BigDecimal.valueOf(2), BigDecimal.valueOf(3));
+        BigDecimal result = calculatorService.sum(BigDecimal.valueOf(2), BigDecimal.valueOf(3));
         assertEquals(BigDecimal.valueOf(5), result);
     }
 

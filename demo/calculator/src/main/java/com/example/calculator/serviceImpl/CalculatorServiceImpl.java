@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class CalculatorServiceImpl implements CalculatorService{
 
     @Override
-    public BigDecimal add(BigDecimal a, BigDecimal b){
+    public BigDecimal sum(BigDecimal a, BigDecimal b){
         return a.add(b);
     }
 
